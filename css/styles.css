@@ -1,0 +1,168 @@
+/*
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+*/
+
+/* Mobile First: 375px width */
+header {
+    position: relative;
+    bottom: 21px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+}
+
+h1, h2 {
+    font-family: 'Fraunces', serif;
+}
+
+.card-component {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: hsl(30, 38%, 92%);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.inner-card-container {
+    width: 275px;
+    height: 470px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card-component img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.item-type {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item-name {
+    width: 80%;
+    font-size: 1.2em;
+    margin: 5px auto;
+    font-family: 'Fraunces', serif;
+}
+
+.item-description {
+    width: 80%;
+    font-size: .75rem;
+    margin: 0 auto;
+}
+
+.current-price, .orig-price {
+    position: absolute;
+}
+
+.current-price {
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+}
+
+.orig-price {
+    text-decoration: line-through;
+    position: absolute;
+    bottom: 77px; 
+    left: 125px;
+    font-size: .67rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.add-btn {
+    width: 250px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    background-color:hsl(158, 36%, 37%);
+    color: hsl(30, 38%, 92%);
+    border: none;
+}
+
+.add-btn-text {
+    position: relative;
+    left: 13px;
+    bottom: 10px;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.shopping-cart {
+    display: inline-block;
+    position: relative;
+    right: 40px;
+    top: 8px;
+}
+
+
+footer {
+    width: 100%;
+    height: .5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+
+
+/* Desktop Styles: 1440px width */
