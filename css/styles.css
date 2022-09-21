@@ -73,30 +73,34 @@ h1, h2 {
     background-color: white;
 }
 
-.card-component img {
+.product-img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 5px 5px 0 0;
+    content: url('../img/image-product-mobile.jpg');
 }
 
 .item-type {
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 10px 13px;
+    margin-top: 10px;
+    font-size: 0.6rem;
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .item-name {
-    width: 80%;
-    font-size: 1.2em;
+    width: 250px;
+    font-size: 1.5em;
     margin: 5px auto;
     font-family: 'Fraunces', serif;
 }
 
 .item-description {
-    width: 80%;
+    width: 250px;
     font-size: .75rem;
     margin: 0 auto;
 }
@@ -141,19 +145,18 @@ h1, h2 {
 
 .add-btn-text {
     position: relative;
-    left: 13px;
-    bottom: 10px;
+    bottom: 2px;
     font-size: 0.8rem;
     color: hsl(0, 0%, 100%);
 }
 
 .shopping-cart {
     display: inline-block;
-    position: relative;
-    right: 40px;
-    top: 8px;
 }
 
+.add-btn:active {
+    background-color: hsl(159, 51%, 22%);
+}
 
 footer {
     width: 100%;
@@ -166,3 +169,67 @@ footer {
 
 
 /* Desktop Styles: 1440px width */
+@media screen and (min-width: 800px) {
+    /* 
+    Container wider
+    switch to desktop img
+    Img to left of info, height of info
+    info same format
+    */
+
+    .card-component {
+        width: 95%;
+        height: 700px;
+    }
+
+    .inner-card-container {
+        width: 650px;
+        height: 487.5px;       
+    }
+
+    .product-img {
+        display: inline-block;
+        position: static;
+        width: 325px;
+        border-radius: 5px 0 0 5px;
+        content: url('../img/image-product-desktop.jpg');
+    }
+
+    .product-info {
+        position: absolute;
+        width: 325px;
+        height: 487.5px;
+        right: 0;
+        top: 0;
+    }
+
+    .item-type {
+        margin-left: 25px;
+        letter-spacing: 5px;
+    }
+
+    .item-name {
+        font-size: 2.3rem;
+    }
+
+    .item-description {
+        margin-top: 25px;
+        font-size: 1rem;
+        line-height: 2;
+    }
+
+    .current-price {
+        left: 40px;
+        font-size: 1.9rem;
+    }
+
+    .orig-price {
+        left: 175px;
+        font-size: 1rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
